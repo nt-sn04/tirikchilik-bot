@@ -31,6 +31,10 @@ def main() -> None:
         filters=Filters.text('Tilni tanlash'),
         callback=select_lang_hendler
     ))
+    # dispatcher.add_handler(MessageHandler(
+    #     filters=Filters.text,
+    #     callback=select_lang_hendler
+    # ))
 
     # callback query handlers
     dispatcher.add_handler(CallbackQueryHandler(
